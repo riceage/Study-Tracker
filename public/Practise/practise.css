@@ -1,0 +1,145 @@
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: "Graphik-Web", "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+/* Navigation Bar styles */
+header {
+    background-color: #1948A8; /* Adjust the background color as needed */
+    font-weight: normal;
+    display: block;
+    height: 2rem;
+    padding: 15px 0;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+}
+h3 {
+    font-size: 1.5rem;
+    display: block;
+  
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    flex-grow: 1; /* Expand to take available space */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 50px; /* Adjust the logo height as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff; /* Adjust the link color as needed */
+}
+
+/* Main Content styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    display: block;
+    
+
+    font-weight: bold;
+    flex-grow: 1; /* Expand to take available space */
+}
+h2{
+    font-size: 1rem;
+    display: block;
+    
+    
+    font-weight: bold;
+    flex-grow: 1; /* Expand to take available space */   
+}
+/* Session Type styles */
+.session-type {
+    display: flex;
+}
+
+.session-box {
+    width: 30%;
+    height: 150px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 1px #cecece;
+    border: 2px solid #cecece; /* Initially no border */
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Add a blue outline when selected */
+.session-box.selected {
+    border-color: #0077cc; /* Blue outline color */
+    border-width: 3px;;
+}
+
+/* Highlight the selected box */
+.session-box:not(.selected):hover {
+    transition: background-color 0.5s ease;
+    background-color: #e4e4e4; /* Blue background color on hover */
+   
+}
+.session-box:hover .question-count{
+    border:2px solid #afafaf ;
+}
+.question-count{
+    border:2px solid #cecece ;
+    border-radius: 10px;
+    display: flex;
+    width: 90%; /* Set the width to 10px */
+    padding: 5px; /* Add some padding for better appearance */
+}
+.session-box.selected h2{
+    color: #0077cc;
+}
+.selector{
+    border: 1px transparent;
+    width:30px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.begin-bar{
+    position: fixed;
+    background-color: white;
+    bottom:0;
+    left:20px;
+    width:100%;
+} 
+.begin-bar hr{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.begin-bar h3{
+
+}
+
+/* Add additional styles for your content below */

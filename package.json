@@ -1,0 +1,24 @@
+{
+  "name": "study-tracker",
+  "version": "1.0.0",
+  "description": "Track my studies\r For chatGPT: When starting a new file give file location and name.",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riceage/Study-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riceage/Study-Tracker/issues"
+  },
+  "homepage": "https://github.com/riceage/Study-Tracker#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
